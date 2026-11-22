@@ -124,7 +124,7 @@ footer .fine{margin-top:24px;font-size:12.5px;color:#9a88b8;border-top:1px solid
 """
 
 def layout(title, body, desc="", path=""):
-    return _layout(title, body, desc, path).replace('href="/', f'href="{PREFIX}/')
+    return _layout(title, body, desc, path).replace('href="/', f'href="{PREFIX}/').replace('src="/', f'src="{PREFIX}/')
 
 def _layout(title, body, desc="", path=""):
     canon = cfg["base_url"].rstrip("/") + "/" + path
