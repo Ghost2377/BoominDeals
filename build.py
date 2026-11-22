@@ -85,6 +85,9 @@ background:repeating-linear-gradient(180deg,transparent 0 18px,var(--bg) 18px 24
 .tile:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.06) 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,transparent 1px 22px)}
 .tile span{position:relative;filter:drop-shadow(0 6px 14px rgba(0,0,0,.45))}
 .t0{background:linear-gradient(135deg,#ff2e93,#ff8a1f)}.t1{background:linear-gradient(135deg,#16e0ff,#8b3dff)}.t2{background:linear-gradient(135deg,#8b3dff,#ff2e93)}.t3{background:linear-gradient(135deg,#ff8a1f,#ffd23f)}.t4{background:linear-gradient(135deg,#00c2a8,#16e0ff)}
+.tile.ph{padding:3px;height:210px}
+.tile.ph img{position:relative;width:100%;height:100%;object-fit:contain;background:#fff;border-radius:14px 14px 0 0;padding:6px}
+article.post .tile.ph{height:340px}article.post .tile.ph img{border-radius:13px}
 .cbody{padding:16px 18px 20px;display:flex;flex-direction:column;gap:9px;flex:1}
 .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
 .store{color:#fff;border-radius:6px;padding:2px 8px;font-weight:800;font-size:12px}
@@ -167,13 +170,21 @@ def price_html(d):
     w = f'<span class="was">{E(d["was"])}</span>' if d.get("was") and d["was"] != "—" else ""
     return f'<span class="price">{E(d["price"])}</span>{w}'
 
+def has_img(d):
+    return os.path.exists(os.path.join(ROOT, "img", d["slug"] + ".jpg"))
+
+def tile(d):
+    if has_img(d):
+        return f'<div class="tile ph {tcls(d)}"><img src="/img/{E(d["slug"])}.jpg" alt="{E(d["title"])}" loading="lazy"></div>'
+    return f'<div class="tile {tcls(d)}"><span>{d.get("emoji","🔥")}</span></div>'
+
 def tcls(d):
     return "t%d" % (sum(map(ord, d["slug"])) % 5)
 
 def card(d):
     href = ("guides/" if d.get("type") == "guide" else "deals/") + d["slug"] + ".html"
     return f"""<a class="card" href="/{href}" data-cat="{E(d['category'])}">
-<div class="tile {tcls(d)}"><span>{d.get('emoji','🔥')}</span></div>
+{tile(d)}
 <div class="cbody"><div class="meta">{store_badge(d)}<span class="cat">{E(d['category'])}</span><span>{E(dt(d['date']).strftime('%b %-d'))}</span></div>
 <h3>{E(d['title'])}</h3><p>{E(d['summary'])}</p><div>{price_html(d)}</div></div></a>"""
 
@@ -193,7 +204,7 @@ def deal_page(d):
 <div class="discbox">ⓘ {aff} Prices and availability are subject to change.</div>
 <div class="stamp">Price as of {E(nice_date(d['date']))}.</div></div>"""
     who = "".join(f"<li>{E(x)}</li>" for x in d["who"])
-    body = f"""<div class="crumbs"><a href="/">Home</a> / <a href="/">Deals</a> / {E(d['category'])}</div><article class="post"><div class="tile {tcls(d)}"><span>{d.get('emoji','🔥')}</span></div><div class="meta">{store_badge(d)}<span class="cat">{E(d['category'])}</span><span>Posted {E(nice_date(d['date']))}</span></div>
+    body = f"""<div class="crumbs"><a href="/">Home</a> / <a href="/">Deals</a> / {E(d['category'])}</div><article class="post">{tile(d)}<div class="meta">{store_badge(d)}<span class="cat">{E(d['category'])}</span><span>Posted {E(nice_date(d['date']))}</span></div>
 <h1>{E(d['title'])}</h1><p class="lede">{E(d['summary'])}</p>{buy}
 <h2>Why it's a good deal</h2><p>{E(d['why'])}</p>
 <h2>Who it's for</h2><ul class="checks">{who}</ul>
@@ -216,6 +227,8 @@ def build():
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
     os.makedirs(os.path.join(OUT, "deals")); os.makedirs(os.path.join(OUT, "guides"))
+    if os.path.isdir(os.path.join(ROOT, "img")):
+        shutil.copytree(os.path.join(ROOT, "img"), os.path.join(OUT, "img"))
     items = sorted(deals, key=lambda d: d["date"], reverse=True)
     dl = [d for d in items if d.get("type") != "guide"]
     gl = [d for d in items if d.get("type") == "guide"]

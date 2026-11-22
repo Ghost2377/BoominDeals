@@ -20,3 +20,7 @@ Static deal site. Built for GitHub Pages, and set up to follow Amazon Associates
 
 ## After Amazon approves you
 Put your tracking ID (e.g. `boomindeals-20`) in `config.json` → `amazon_tag` and rebuild. Every Amazon link gets tagged automatically.
+
+## Product photos
+Put a square product photo at `img/<deal-slug>.jpg` and the build uses it on the card and the deal page; otherwise the emoji tile is shown.
+For Amazon deals, never use Amazon's own images (against Associates rules until you have Product Advertising/Creators API access). Use the same product's photo from Walmart, Best Buy, Target or the brand's own site.
