@@ -24,3 +24,9 @@ Put your tracking ID (e.g. `boomindeals-20`) in `config.json` → `amazon_tag` a
 ## Product photos
 Put a square product photo at `img/<deal-slug>.jpg` and the build uses it on the card and the deal page; otherwise the emoji tile is shown.
 For Amazon deals, never use Amazon's own images (against Associates rules until you have Product Advertising/Creators API access). Use the same product's photo from Walmart, Best Buy, Target or the brand's own site.
+
+## Short links (HC / Twitter)
+Every Amazon deal gets two links, using the lowercase ASIN as the code:
+- Deal page: `<base_url>/<asin>`. It shows the deal, #ad, the Amazon disclosure and "Prices and availability are subject to change."
+- Go link: `<base_url>/go/<asin>`. It instantly forwards to `amazon.com/dp/<ASIN>?tag=<amazon_tag>`. **Paste this one on HC / Twitter.**
+`short_links.json` lists every pair after each build.

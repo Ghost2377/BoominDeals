@@ -15,7 +15,7 @@ E = html.escape
 NAME = cfg["site_name"]
 from urllib.parse import urlparse
 PREFIX = urlparse(cfg["base_url"]).path.rstrip("/")  # e.g. /boomindeals on GitHub Pages
-AMZ_DISCLOSURE = "As an Amazon Associate I earn from qualifying purchases."
+AMZ_DISCLOSURE = "As an Amazon Associate, I earn from qualifying purchases."
 
 STORES = {
     "amazon": ("Amazon", "#ff9900"), "walmart": ("Walmart", "#0071dc"), "target": ("Target", "#cc0000"),
@@ -188,13 +188,25 @@ def card(d):
 <div class="cbody"><div class="meta">{store_badge(d)}<span class="cat">{E(d['category'])}</span><span>{E(dt(d['date']).strftime('%b %-d'))}</span></div>
 <h3>{E(d['title'])}</h3><p>{E(d['summary'])}</p><div>{price_html(d)}</div></div></a>"""
 
-def deal_page(d):
+def short(d):
+    return d["asin"].lower() if d.get("store") == "amazon" and d.get("asin") else None
+
+def go_page(d):
+    url = amazon_url(d["asin"])
+    return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Redirecting to Amazon…</title>
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="refresh" content="0;url={E(url)}"><script>location.replace({json.dumps(url)});</script></head>
+<body style="font-family:sans-serif;background:#120626;color:#fff;text-align:center;padding:40px">
+<p>Taking you to Amazon… <a style="color:#16e0ff" href="{E(url)}" rel="nofollow sponsored">Click here if nothing happens</a>.</p>
+<p style="font-size:13px;color:#c9b7e6">#ad · {AMZ_DISCLOSURE} Prices and availability are subject to change.</p></body></html>"""
+
+def deal_page(d, path=None):
     n, c = STORES[d["store"]]
     url = deal_url(d)
     rel = 'rel="nofollow sponsored noopener" target="_blank"'
     if d["store"] == "amazon":
         buy = f"""<div class="buy"><a class="btn big" href="{E(url)}" {rel}>Check today's price on Amazon →</a>
-<div class="discbox">ⓘ <strong>Affiliate disclosure:</strong> {AMZ_DISCLOSURE} Amazon prices change often, so the current price is shown on Amazon.</div>
+<div class="discbox"><span class="ad">#ad</span> <strong>Affiliate disclosure:</strong> {AMZ_DISCLOSURE} Prices and availability are subject to change.</div>
 <div class="stamp">We checked this deal on {E(nice_date(d['date']))}.</div></div>"""
     else:
         extra = "".join(f'<a class="btn alt" href="{E(u)}" {rel}>{E(t)}</a>' for t, u in d.get("extra_links", []))
@@ -211,7 +223,7 @@ def deal_page(d):
 <h2>What to watch out for</h2><p>{E(d['watch'])}</p>
 <h2>Our take</h2><p class="verdict">{E(d['verdict'])}</p>
 <a class="back" href="/">← All deals</a></article>"""
-    return layout(f"{d['title']} | {NAME}", body, d["summary"], f"deals/{d['slug']}.html")
+    return layout(f"{d['title']} | {NAME}", body, d["summary"], path or f"deals/{d['slug']}.html")
 
 def guide_page(d):
     paras = "".join(f"<p>{E(p)}</p>" for p in d["body"])
@@ -246,6 +258,16 @@ def build():
 <h2 class="sect disp">Latest <span>guides</span></h2><div class="grid">{''.join(card(d) for d in gl[:3])}</div>
 <script>document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{{document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;document.querySelectorAll('#grid .card').forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')}})</script>"""
     open(os.path.join(OUT, "index.html"), "w").write(layout(f"{NAME} — {cfg['tagline']}", home, cfg["tagline"], ""))
+    links = []
+    for d in dl:
+        c = short(d)
+        if c:
+            os.makedirs(os.path.join(OUT, c), exist_ok=True)
+            open(os.path.join(OUT, c, "index.html"), "w").write(deal_page(d, f"{c}/"))
+            os.makedirs(os.path.join(OUT, "go", c), exist_ok=True)
+            open(os.path.join(OUT, "go", c, "index.html"), "w").write(go_page(d))
+            links.append((d["title"], f"{cfg['base_url'].rstrip('/')}/{c}", f"{cfg['base_url'].rstrip('/')}/go/{c}"))
+    json.dump(links, open(os.path.join(ROOT, "short_links.json"), "w"), indent=1, ensure_ascii=False)
     for d in dl:
         open(os.path.join(OUT, "deals", d["slug"] + ".html"), "w").write(deal_page(d))
     for d in gl:
