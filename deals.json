@@ -1688,5 +1688,113 @@
     ],
     "watch": "Battery life is shorter on max power.",
     "verdict": "A solid cordless upgrade."
+  },
+  {
+    "slug": "ring-battery-doorbell-2k",
+    "date": "2026-11-22T21:31:00-05:00",
+    "title": "Ring Battery Doorbell 2K deal",
+    "store": "amazon",
+    "category": "Smart Home",
+    "emoji": "🔔",
+    "asin": "B0FHJ7TKZM",
+    "summary": "Ring's newest battery video doorbell with 2K video and a wide field of view.",
+    "why": "It installs without wiring, sends motion alerts to your phone, and the sharper 2K picture makes faces and packages easier to read.",
+    "who": [
+      "Renters",
+      "First-time smart home buyers",
+      "Package-theft worriers"
+    ],
+    "watch": "Saved video history needs a Ring Protect plan, and battery life depends on how busy your doorway is.",
+    "verdict": "An easy way to add a front-door camera."
+  },
+  {
+    "slug": "roku-streaming-stick-hd",
+    "date": "2026-11-22T21:32:00-05:00",
+    "title": "Roku Streaming Stick HD deal",
+    "store": "amazon",
+    "category": "Tech",
+    "emoji": "📺",
+    "asin": "B0DXXYS4BJ",
+    "summary": "A compact HD streaming stick with a voice remote that plugs straight into your TV.",
+    "why": "It turns an older or basic TV into a smart one, with all the major streaming apps and a simple home screen.",
+    "who": [
+      "Bedroom TVs",
+      "Guest rooms",
+      "Anyone with a non-smart TV"
+    ],
+    "watch": "HD only, so skip it if you want 4K or HDR.",
+    "verdict": "A cheap upgrade for a secondary TV."
+  },
+  {
+    "slug": "logitech-g305-lightspeed-wireless-mouse",
+    "date": "2026-11-22T21:33:00-05:00",
+    "title": "Logitech G305 Lightspeed Wireless Gaming Mouse deal",
+    "store": "amazon",
+    "category": "Gaming Gear",
+    "emoji": "🖱️",
+    "asin": "B07CMS5Q6P",
+    "summary": "A lightweight wireless gaming mouse with the Hero 12K sensor.",
+    "why": "It pairs low-latency wireless with long battery life from a single AA, and it has been a go-to budget gaming mouse for years.",
+    "who": [
+      "Budget PC gamers",
+      "Laptop users",
+      "Desk setup upgraders"
+    ],
+    "watch": "It uses a AA battery and has no rechargeable option.",
+    "verdict": "A proven wireless mouse that is easy to recommend."
+  },
+  {
+    "slug": "dragon-quest-i-ii-hd-2d-remake-switch-2",
+    "date": "2026-11-22T21:34:00-05:00",
+    "title": "Dragon Quest I & II HD-2D Remake for Nintendo Switch 2 deal",
+    "store": "amazon",
+    "category": "Video Games",
+    "emoji": "🎮",
+    "asin": "B0F9ZT5MH9",
+    "summary": "The first two Dragon Quest games rebuilt in the HD-2D style for Switch 2.",
+    "why": "It brings the series' origin story to a new audience with modern visuals and quality-of-life updates.",
+    "who": [
+      "JRPG fans",
+      "Series newcomers",
+      "Switch 2 owners"
+    ],
+    "watch": "The Switch 2 physical edition is a Game-Key Card, so the full game downloads to your console.",
+    "verdict": "A good pickup for classic JRPG fans."
+  },
+  {
+    "slug": "hyperx-cloud-iii-s-wireless-gaming-headset",
+    "date": "2026-11-22T21:35:00-05:00",
+    "title": "HyperX Cloud III S Wireless Gaming Headset deal",
+    "store": "amazon",
+    "category": "Gaming Gear",
+    "emoji": "🎧",
+    "asin": "B0F6NZWPTC",
+    "summary": "A multi-platform wireless gaming headset from HyperX.",
+    "why": "It keeps the comfort and clear mic the Cloud line is known for, and it works across PC and consoles.",
+    "who": [
+      "PC and console players",
+      "Long gaming sessions",
+      "Cord-free setups"
+    ],
+    "watch": "Check which connection modes work with your console before you buy.",
+    "verdict": "A comfortable wireless headset for everyday gaming."
+  },
+  {
+    "slug": "razer-naga-v2-hyperspeed-wireless-mouse",
+    "date": "2026-11-22T21:36:00-05:00",
+    "title": "Razer Naga V2 HyperSpeed Wireless MMO Mouse deal",
+    "store": "amazon",
+    "category": "Gaming Gear",
+    "emoji": "🖱️",
+    "asin": "B0BGJT87N2",
+    "summary": "A wireless MMO mouse with a swappable thumb-button plate.",
+    "why": "The programmable thumb grid puts a lot of abilities and macros within easy reach, and the battery lasts for days of play.",
+    "who": [
+      "MMO players",
+      "Productivity macro fans",
+      "Wireless desk setups"
+    ],
+    "watch": "It is a big mouse, so smaller hands may find it awkward.",
+    "verdict": "A strong pick if you play MMOs."
   }
 ]
