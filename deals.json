@@ -2600,5 +2600,59 @@
     ],
     "watch": "Plug-in power only. Smart alerts and cloud video history need a paid Arlo Secure plan after the trial.",
     "verdict": "A solid pick for covering one room without buying several cameras."
+  },
+  {
+    "slug": "beats-studio-pro-wireless-headphones",
+    "date": "2026-11-24T10:15:00-05:00",
+    "title": "Beats Studio Pro Wireless Noise Cancelling Headphones deal",
+    "store": "amazon",
+    "category": "Electronics",
+    "emoji": "🎧",
+    "asin": "B0C8PT7DF5",
+    "summary": "Over-ear Bluetooth headphones with active noise cancelling, Transparency mode and up to 40 hours of battery.",
+    "why": "Works natively with both iPhone and Android, and the noise cancelling is strong enough for flights and commutes.",
+    "who": [
+      "Commuters and frequent flyers",
+      "Android and iPhone users",
+      "Gift buyers"
+    ],
+    "watch": "Several colors are listed and prices can differ by color. Check the one you pick.",
+    "verdict": "A well-reviewed pair of ANC headphones at a clearly lower price than usual."
+  },
+  {
+    "slug": "vitamix-propel-510-blender",
+    "date": "2026-11-24T10:16:00-05:00",
+    "title": "Vitamix Propel Series 510 Professional-Grade Blender deal",
+    "store": "amazon",
+    "category": "Kitchen",
+    "emoji": "🥤",
+    "asin": "B0BWSLYK5H",
+    "summary": "A 48-ounce Vitamix blender with three preset programs and variable speed control.",
+    "why": "Vitamix motors handle smoothies, soups and nut butters that cheaper blenders struggle with, and the container is built to last.",
+    "who": [
+      "Smoothie and soup makers",
+      "Home cooks upgrading a weak blender",
+      "Gift buyers"
+    ],
+    "watch": "It is loud and takes up counter height, so check cabinet clearance.",
+    "verdict": "A serious blender at a price that is hard to find on Vitamix."
+  },
+  {
+    "slug": "irobot-roomba-plus-415x-combo",
+    "date": "2026-11-24T10:17:00-05:00",
+    "title": "iRobot Roomba Plus 415X Combo Robot Vacuum and Mop deal",
+    "store": "amazon",
+    "category": "Home",
+    "emoji": "🤖",
+    "asin": "B0GT6BYB85",
+    "summary": "A robot vacuum and mop with an AutoWash dock that empties the bin and washes and dries the mop pad.",
+    "why": "The dock handles the messy parts for you, so it can run for weeks with little upkeep.",
+    "who": [
+      "Pet owners",
+      "Busy households",
+      "Anyone with mixed hard floors and rugs"
+    ],
+    "watch": "The dock is large and needs wall space and a nearby outlet.",
+    "verdict": "A hands-off cleaner with the self-washing dock included."
   }
 ]
