@@ -2726,5 +2726,59 @@
     ],
     "watch": "It is a corded vacuum, so you are limited by the cord length. The bin is smaller than some larger uprights.",
     "verdict": "A dependable all-around vacuum at a lower price than usual."
+  },
+  {
+    "slug": "beats-studio-pro-black",
+    "date": "2026-11-27T17:10:00-05:00",
+    "title": "Beats Studio Pro Wireless Headphones (Black)",
+    "store": "amazon",
+    "asin": "B0C8PR4W22",
+    "category": "Tech",
+    "emoji": "🎧",
+    "summary": "Beats' flagship over-ear wireless headphones with active noise cancelling, marked down at Amazon for Black Friday.",
+    "why": "You get active noise cancelling, USB-C lossless audio and up to 40 hours of battery, and they work with both Apple and Android. This one is sold and shipped by Amazon with tens of thousands of reviews, and other new listings we checked were priced higher.",
+    "who": [
+      "Commuters and travelers who want noise cancelling",
+      "iPhone and Android users who want one pair for both",
+      "Anyone replacing an older pair of over-ear headphones"
+    ],
+    "watch": "They are over-ear headphones, so they are bulkier than earbuds to carry around. Check the color in the listing before you order.",
+    "verdict": "A well-reviewed pair of noise-cancelling headphones at a lower price than most other new listings."
+  },
+  {
+    "slug": "tp-link-archer-be550",
+    "date": "2026-11-27T17:11:00-05:00",
+    "title": "TP-Link Archer BE550 Tri-Band WiFi 7 Router (BE9300)",
+    "store": "amazon",
+    "asin": "B0CJSNSVMR",
+    "category": "Tech",
+    "emoji": "📶",
+    "summary": "A tri-band WiFi 7 router with BE9300 speeds, marked down at Amazon for Black Friday.",
+    "why": "It adds WiFi 7 with a dedicated third band and multi-gig ports, which helps in homes with lots of connected devices. It is sold and shipped by Amazon, and other new listings we found were priced noticeably higher.",
+    "who": [
+      "Households with many phones, TVs and laptops online at once",
+      "People upgrading from a WiFi 5 or WiFi 6 router",
+      "Remote workers and gamers who want faster wired and wireless links"
+    ],
+    "watch": "You only get the full WiFi 7 speeds if your devices support it, and its average rating is a little lower than some other routers. Check that your internet plan is fast enough to benefit.",
+    "verdict": "A capable WiFi 7 router at a lower price than the other new listings we compared."
+  },
+  {
+    "slug": "marshall-acton-iii-cream",
+    "date": "2026-11-27T17:12:00-05:00",
+    "title": "Marshall Acton III Bluetooth Home Speaker (Cream)",
+    "store": "amazon",
+    "asin": "B0BBYF2SXX",
+    "category": "Home",
+    "emoji": "🔊",
+    "summary": "Marshall's Acton III Bluetooth home speaker in cream, marked down at Amazon for Black Friday.",
+    "why": "It has the classic Marshall amp styling with a big room-filling sound and physical knobs for volume, bass and treble. It is sold and shipped by Amazon with nearly three thousand reviews, and the other new listings we compared were priced higher.",
+    "who": [
+      "Anyone who wants a speaker that doubles as decor",
+      "Music fans who like physical bass and treble knobs",
+      "Shoppers upgrading from a small portable speaker"
+    ],
+    "watch": "It plugs into the wall rather than running on a battery, so it is for home use. The cream color shows scuffs more than black.",
+    "verdict": "A good-looking home speaker at a lower price than the other new listings we found."
   }
 ]
