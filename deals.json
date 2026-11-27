@@ -2780,5 +2780,41 @@
     ],
     "watch": "It plugs into the wall rather than running on a battery, so it is for home use. The cream color shows scuffs more than black.",
     "verdict": "A good-looking home speaker at a lower price than the other new listings we found."
+  },
+  {
+    "slug": "samsung-galaxy-tab-s10-fe-silver",
+    "date": "2026-11-27T18:05:00-05:00",
+    "title": "Samsung Galaxy Tab S10 FE 128GB WiFi Tablet (Silver)",
+    "store": "amazon",
+    "asin": "B0DVZSRJ8Q",
+    "category": "Tech",
+    "emoji": "📱",
+    "summary": "Samsung's Galaxy Tab S10 FE with a 10.9-inch display and S Pen support, marked down at Amazon for Black Friday.",
+    "why": "It has a bright 10.9-inch screen, strong performance for everyday apps, and Samsung's long software support. This is the US version sold and shipped by Amazon, and other new listings we compared were priced higher.",
+    "who": [
+      "Students who want a tablet for notes and reading",
+      "Families who want a capable shared tablet",
+      "Android users who want an alternative to an iPad"
+    ],
+    "watch": "It is the WiFi-only 128GB model, so there is no cellular option. Storage can be expanded with a microSD card, but accessories like the keyboard are sold separately.",
+    "verdict": "A well-reviewed Android tablet at a lower price than the other new listings we found."
+  },
+  {
+    "slug": "staub-4qt-dutch-oven-white",
+    "date": "2026-11-27T18:06:00-05:00",
+    "title": "Staub Cast Iron 4 Quart Dutch Oven (White)",
+    "store": "amazon",
+    "asin": "B0028Y5Q1E",
+    "category": "Kitchen",
+    "emoji": "🍲",
+    "summary": "A made-in-France Staub enameled cast iron Dutch oven, marked well below Staub's own list price at Amazon for Black Friday.",
+    "why": "Staub's enameled cast iron holds heat evenly and the self-basting lid keeps braises moist. It is sold and shipped by Amazon with more than a thousand reviews, and it sits well below the list price shown on Staub's own site.",
+    "who": [
+      "Home cooks who braise, roast and bake bread",
+      "Anyone building a cookware set that will last for decades",
+      "Shoppers who want a standout gift for a cook"
+    ],
+    "watch": "It is heavy, so lifting it full takes some care, and the matte white interior can show staining over time. Other retailers also had it at a similar sale price when we checked.",
+    "verdict": "A premium Dutch oven at a far lower price than its list price."
   }
 ]
