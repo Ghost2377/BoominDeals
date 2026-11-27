@@ -171,3 +171,5 @@ amazon:B0C8PR4W22
 amazon:B0CJSNSVMR
 amazon:B0BBYF2SXX
 woot:new-dji-mini-5-pro-fly-more-combo-with-dji-rc-2z-6
+amazon:B0DVZSRJ8Q
+amazon:B0028Y5Q1E
