@@ -3140,5 +3140,149 @@
     ],
     "watch": "Hand-washing is recommended to keep the edge, and it needs regular honing. This is the Classic line, not the pricier Classic Precision.",
     "verdict": "A solid everyday chef's knife at a price that is hard to ignore."
+  },
+  {
+    "slug": "ring-battery-doorbell-2k-matte-mocha",
+    "date": "2026-11-28T05:15:00-05:00",
+    "title": "Ring Battery Doorbell 2K (Matte Mocha)",
+    "store": "amazon",
+    "asin": "B0G2D1R15Q",
+    "category": "Smart Home",
+    "emoji": "🔔",
+    "summary": "Ring's battery-powered video doorbell with 2K video, in the dark Matte Mocha finish, marked down for Black Friday.",
+    "why": "Amazon sells and ships it, and it carries a 4.3-star rating across nearly ten thousand reviews. It runs on a quick-release battery, so there is no doorbell wiring to deal with.",
+    "who": [
+      "Renters who cannot rewire a doorbell",
+      "First-time smart home buyers",
+      "Anyone worried about package theft"
+    ],
+    "watch": "This listing is the Matte Mocha color only. Saved video history needs a paid Ring Protect plan, and battery life depends on how busy your doorway is.",
+    "verdict": "A simple front-door camera upgrade at a low price."
+  },
+  {
+    "slug": "blink-mini-2k-plus-white",
+    "date": "2026-11-28T05:16:00-05:00",
+    "title": "Blink Mini 2K+ Indoor Plug-In Camera (White)",
+    "store": "amazon",
+    "asin": "B0F3BC8661",
+    "category": "Smart Home",
+    "emoji": "📷",
+    "summary": "Blink's newest indoor plug-in camera with 2K video, night vision and two-way talk, in white.",
+    "why": "It is sold and shipped by Amazon, rated 4.4 stars across more than ten thousand reviews, and it plugs into any outlet with no hub needed to get started.",
+    "who": [
+      "Pet owners checking in while away",
+      "Renters who want a simple camera with no wiring",
+      "Anyone adding a room to an existing Blink setup"
+    ],
+    "watch": "This listing is the white single-camera version. Cloud video history needs a Blink subscription, or a Sync Module for local storage. It is for indoor use only.",
+    "verdict": "A capable indoor camera for very little money."
+  },
+  {
+    "slug": "blink-outdoor-4-add-on-camera",
+    "date": "2026-11-28T05:17:00-05:00",
+    "title": "Blink Outdoor 4 Wire-Free Security Camera (Add-On, 1 Camera)",
+    "store": "amazon",
+    "asin": "B0B1N7LJD3",
+    "category": "Smart Home",
+    "emoji": "📹",
+    "summary": "Blink's wire-free outdoor camera with HD video, night vision, two-way talk and a battery rated for up to two years.",
+    "why": "Amazon is the seller, and it has a 4.2-star rating from more than thirty-eight thousand reviews. There is no wiring or power outlet to run, so it mounts in a few minutes.",
+    "who": [
+      "Homeowners who want a camera on the porch or driveway",
+      "Anyone already using a Blink Sync Module",
+      "Renters who can mount with screws"
+    ],
+    "watch": "This is an add-on camera, so it needs a Blink Sync Module that is not included. Cloud video history needs a Blink subscription, and stock was showing as limited.",
+    "verdict": "A solid add-on outdoor camera for an existing Blink system."
+  },
+  {
+    "slug": "echo-dot-max-smart-speaker",
+    "date": "2026-11-28T05:18:00-05:00",
+    "title": "Amazon Echo Dot Max Smart Speaker (Glacier)",
+    "store": "amazon",
+    "asin": "B0D6SZKGT4",
+    "category": "Tech",
+    "emoji": "🔊",
+    "summary": "Amazon's newest Echo Dot with fuller sound and extra bass, a built-in smart home hub and Alexa+ support, in Glacier white.",
+    "why": "It is sold and shipped by Amazon with a 4.3-star rating, and the price is below the lowest level deal trackers had logged for it before.",
+    "who": [
+      "Anyone who wants a small speaker that sounds fuller than a standard Dot",
+      "Smart home beginners who want a built-in hub",
+      "Holiday gift shoppers"
+    ],
+    "watch": "It suits small and medium rooms rather than big living spaces. This listing is the Glacier color, and other colors can be priced differently.",
+    "verdict": "A fuller-sounding Dot at a new low price."
+  },
+  {
+    "slug": "garmin-vivoactive-5-ivory",
+    "date": "2026-11-28T05:19:00-05:00",
+    "title": "Garmin vívoactive 5 GPS Smartwatch (Ivory)",
+    "store": "amazon",
+    "asin": "B0CG6NBJ61",
+    "category": "Tech",
+    "emoji": "⌚",
+    "summary": "Garmin's AMOLED health and fitness smartwatch with built-in GPS, sleep and stress tracking and up to 11 days of battery life, in the 42mm Ivory finish.",
+    "why": "Amazon sells and ships it, and it has a 4.3-star rating from nearly thirteen thousand reviews. The price is below the record lows deal sites reported earlier this fall.",
+    "who": [
+      "Runners and gym-goers who want solid tracking",
+      "Anyone moving up from a basic fitness band",
+      "Holiday gift shoppers"
+    ],
+    "watch": "This listing is the Ivory color only, and other colors are priced differently. Offline music needs a paid streaming subscription, and a few owners report battery or connectivity problems.",
+    "verdict": "A new low on a capable Garmin."
+  },
+  {
+    "slug": "echo-time-smart-clock-graphite",
+    "date": "2026-11-28T05:20:00-05:00",
+    "title": "Amazon Echo Time Smart Clock (Graphite)",
+    "store": "amazon",
+    "asin": "B0FRPDXJYC",
+    "category": "Smart Home",
+    "emoji": "⏰",
+    "summary": "Amazon's all-new bedside smart clock with customizable clock faces, smart alarms, ambient sounds and a built-in smart home hub, in Graphite.",
+    "why": "It is sold and shipped by Amazon, and the price is below the record low that deal sites were reporting for it recently.",
+    "who": [
+      "Anyone who wants a bedside clock that also works as an Alexa speaker",
+      "Light sleepers who use ambient sounds",
+      "Smart home users who want a hub in the bedroom"
+    ],
+    "watch": "It is brand new, so only about 150 reviews are in and the rating is a middling 4.0 stars. It is designed as a bedside device, so expect modest sound rather than room-filling audio.",
+    "verdict": "A fun bedroom gadget at a price that is hard to ignore."
+  },
+  {
+    "slug": "fire-tv-stick-4k-select",
+    "date": "2026-11-28T05:21:00-05:00",
+    "title": "Amazon Fire TV Stick 4K Select",
+    "store": "amazon",
+    "asin": "B0C6W3D4RM",
+    "category": "TVs",
+    "emoji": "📺",
+    "summary": "Amazon's entry-level 4K streaming stick with HDR10+, Dolby audio and an Alexa voice remote.",
+    "why": "It is sold and shipped by Amazon, rated 4.2 stars across more than twenty thousand reviews, and it matches the lowest price deal sites have tracked for it.",
+    "who": [
+      "Anyone upgrading an older TV to 4K",
+      "Guest rooms and bedrooms that need a cheap streamer",
+      "Holiday gift shoppers"
+    ],
+    "watch": "It is the basic 4K model with 8GB of storage and no Dolby Vision, so heavy app users may prefer the pricier 4K Max.",
+    "verdict": "An easy, cheap way to make any TV smart."
+  },
+  {
+    "slug": "fire-tv-stick-hd-2nd-gen",
+    "date": "2026-11-28T05:22:00-05:00",
+    "title": "Amazon Fire TV Stick HD (2nd Gen)",
+    "store": "amazon",
+    "asin": "B0DJGDC3BD",
+    "category": "TVs",
+    "emoji": "📺",
+    "summary": "Amazon's newest HD streaming stick with an Alexa voice remote and free and live TV, powered straight from the TV.",
+    "why": "Amazon sells and ships it with a 4.2-star rating from more than eight thousand reviews, and the price is under what deal sites logged during earlier sales.",
+    "who": [
+      "Owners of 1080p TVs under about 50 inches",
+      "Anyone who needs a spare streamer for a second room",
+      "Holiday stocking stuffer shoppers"
+    ],
+    "watch": "It tops out at 1080p, so pick a 4K stick if your TV is 4K. Amazon's own guidance points larger TVs toward the 4K models.",
+    "verdict": "A bargain streaming stick for an HD TV."
   }
 ]
